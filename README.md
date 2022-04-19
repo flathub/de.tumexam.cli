@@ -16,8 +16,8 @@ flatpak install flathub org.gnome.Sdk//42 org.gnome.Platform//42
 
 ### Building
 ```
-git clone <THIS_REPOSITORY>
-cd <CLONED_REPOSITORY>
+git clone https://github.com/flathub/de.tumexam.cli.git
+cd de.tumexam.cli
 flatpak-builder --force-clean flatpak_build_dir de.tumexam.cli.yml
 ```
 
