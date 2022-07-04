@@ -20,8 +20,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/COM8/tumexam-cli.git
-        tag: 1.5.2.0
-        commit: c6735c2ab789747e0eb7637abcbc33c3a42c476f
+        tag: 1.6.0.0
+        commit: 6e797d2edc001a9bb1b427db757071bc35a5df18
       - type: patch
         path: patches/offline_build.patch
       - type: patch
@@ -36,8 +36,8 @@ modules:
         sources:
           - type: git
             url: https://github.com/libcpr/cpr.git
-            tag: 1.8.1
-            commit: 6ea2dec23c3df14ac3b27b7d2d6bbff0cb7ba1b0
+            tag: 1.8.3
+            commit: db351ffbbadc6c4e9239daaa26e9aefa9f0ec82d
         cleanup:
           - /include
       - name: nlohmann-json

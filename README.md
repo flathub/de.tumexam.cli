@@ -5,6 +5,7 @@ The TUMexam client can be build and installed using Flatpak.
 #### Fedora
 ```
 sudo dnf install flatpak flatpak-builder
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.gnome.Sdk//42 org.gnome.Platform//42
 ```
 
