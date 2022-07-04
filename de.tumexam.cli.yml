@@ -20,8 +20,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/COM8/tumexam-cli.git
-        tag: 1.6.0.0
-        commit: 6e797d2edc001a9bb1b427db757071bc35a5df18
+        tag: 1.6.1.0
+        commit: 4b84fdad4cc75c246384c84ebc6cd9ad6c533572
       - type: patch
         path: patches/offline_build.patch
       - type: patch
