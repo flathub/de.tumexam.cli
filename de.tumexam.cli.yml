@@ -8,7 +8,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --share=network
-  - --own-name=de.tumexam.cli
   - --device=dri
 modules:
   - name: tumexam-cli
