@@ -1,5 +1,5 @@
 ## Flatpak
-The TUMexam client can be build and installed using Flatpak.
+The TUMexam client can be built and installed using Flatpak.
 
 ### Requirements
 #### Fedora
