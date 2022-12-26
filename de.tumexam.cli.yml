@@ -1,6 +1,6 @@
 app-id: de.tumexam.cli
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: tumexam-cli
 finish-args:
@@ -8,7 +8,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --share=network
-  - --own-name=de.tumexam.cli
   - --device=dri
 modules:
   - name: tumexam-cli
@@ -20,8 +19,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/COM8/tumexam-cli.git
-        tag: 1.6.1.0
-        commit: 4b84fdad4cc75c246384c84ebc6cd9ad6c533572
+        tag: 1.7.0.0
+        commit: 302f80f94f7bbde896074b449ce603b605eedbe6
       - type: patch
         path: patches/offline_build.patch
       - type: patch
@@ -69,8 +68,8 @@ modules:
           - -Dbuild-tests=false
         sources:
           - type: archive
-            url: https://download.gnome.org/sources/gtkmm/4.6/gtkmm-4.6.0.tar.xz
-            sha256: 1353a09093cb571ef5ac05d93d200baf132ad604b5f4940777656e1505814c1f
+            url: https://download.gnome.org/sources/gtkmm/4.8/gtkmm-4.8.0.tar.xz
+            sha256: c82786d46e2b07346b6397ca7f1929d952f4922fa5c9db3dee08498b9a136cf5
         cleanup:
           - /include
         modules:
@@ -83,8 +82,8 @@ modules:
             sources:
               - type: git
                 url: https://gitlab.freedesktop.org/cairo/cairomm.git
-                tag: 1.16.1
-                commit: 61286896d11ed961add217ff4a209d10d9efb700
+                tag: 1.16.2
+                commit: 9dcaeb7af1620ed509bd471a0c8b27aff459178c
             cleanup:
               - /include
             modules:
@@ -99,8 +98,8 @@ modules:
                 sources:
                   - type: git
                     url: https://github.com/libsigcplusplus/libsigcplusplus.git
-                    tag: 3.2.0
-                    commit: baab13fd40d90dc0a33241a4bd517f985479a0c5
+                    tag: 3.4.0
+                    commit: e88e319aa50df010320dd15e7c802f92752dc8dc
                 cleanup:
                   - /include
                 modules:
@@ -110,8 +109,8 @@ modules:
                       - -Duse-network=false
                     sources:
                       - type: archive
-                        url: https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.4.tar.xz
-                        sha256: e954c09b4309a7ef93e13b69260acdc5738c907477eb381b78bb1e414ee6dbd8
+                        url: https://download.gnome.org/sources/mm-common/1.0/mm-common-1.0.5.tar.xz
+                        sha256: 705c6d29f4116a29bde4e36cfc1b046c92b6ef8c6dae4eaec85018747e6da5aa
                     cleanup:
                       - /include
           - name: pangomm
@@ -121,8 +120,8 @@ modules:
             sources:
               - type: git
                 url: https://gitlab.gnome.org/GNOME/pangomm.git
-                tag: 2.50.0
-                commit: cd00ba55a53b71a41fb566827db8b7d7c28c36b6
+                tag: 2.50.1
+                commit: 7083b4deaa6401bf1f5b771752a46632ecc8d303
             cleanup:
               - /include
             modules:
@@ -135,7 +134,7 @@ modules:
                 sources:
                   - type: git
                     url: https://gitlab.gnome.org/GNOME/glibmm.git
-                    tag: 2.70.0
-                    commit: 042e90eebca380686bbcc24d6803305b9d2c7823
+                    tag: 2.74.0
+                    commit: ca716cab5075a3cfeb59fd1f1f3d38b422619293
                 cleanup:
                   - /include
