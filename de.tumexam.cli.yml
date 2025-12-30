@@ -25,6 +25,8 @@ modules:
         path: patches/offline_build.patch
       - type: patch
         path: patches/resource_path.patch
+      - type: patch
+        path: patches/fix-appdata.patch
     post-install:
       - install -D de.tumexam.cli.appdata.xml /app/share/metainfo/de.tumexam.cli.appdata.xml
     modules:
